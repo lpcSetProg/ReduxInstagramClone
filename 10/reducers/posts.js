@@ -4,9 +4,12 @@
 // 2. copy of current state
 
 function posts(state = [], action) {
-  console.log("The post will change");
-  console.log(state, action);
-  return state;
+  switch(action.type) {
+    case 'INCREMENT_LIKES' : 
+    // return the updated state
+    default:
+      return state;
+  }
 }
 
 export default posts;
